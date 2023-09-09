@@ -1,0 +1,26 @@
+
+.fondo{
+	background-color: #00000082 !important;
+	padding:2rem;
+	border-radius: .9rem;
+}
+
+.contenido_cuerpo .formulario .campos{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap:2rem;
+}
+
+label{
+	color:rgb(255, 255, 255);
+	font-size:1.8rem;
+}
+
+input{
+	height: 3.5rem;
+}
+
+input[type="submit"]{
+	margin-top: 2rem;
+	font-size: 1.8rem;
+}

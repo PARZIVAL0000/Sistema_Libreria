@@ -1,0 +1,107 @@
+html{
+	font-size:62.5%;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+body{
+	font-size: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(to top, #37306B -25%, #66347F 54%);;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+a{
+	text-decoration:none;
+	color: rgb(0, 0, 0);
+}
+
+.cabecera h1{
+	text-align:center;
+	text-transform:uppercase;
+	color:rgb(255, 255, 255);
+	padding:2rem 0rem 4rem 0rem;
+}
+
+.contenido{
+	margin-top:2rem;
+	margin-bottom: 1rem;
+	padding:2rem 0rem;
+	display: flex;
+	flex-direction: column;
+	gap:2rem;
+	background-color:#9E4784;
+	width: 70rem;
+	margin: 0 auto;
+	border-radius:.9rem;
+}
+
+.contenido .contenido_accion{
+	margin: 0 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenido .contenido_accion a{
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size:1.5rem;
+	text-align: left;
+}
+
+.contenido .contenido_formulario{
+	margin: 2rem auto;
+	width: 60rem;
+}
+
+.contenido .contenido_formulario .formulario .campo{
+	display: flex;
+	justify-content: space-between;
+	gap:2rem;
+	margin-bottom:2rem;
+}
+
+.contenido .contenido_formulario .formulario .campo label{
+	text-align: right;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	font-weight: 200;
+	font-size:1.6rem;
+	flex:1;
+	display: flex;
+	align-items: center;
+}
+
+.contenido .contenido_formulario .formulario .campo input{
+	height: 4rem;
+	flex:3;
+	padding: 0rem 1rem;
+}
+
+.contenido .contenido_formulario .formulario input[type="submit"]{
+    width: 16.5rem;
+    height: 3.5rem;
+    border: none;
+    margin-top: 2rem;
+    transition: background-color 360ms ease;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAmdJREFUSEvl1kuozVEUx/HPlWdKDCivkbxDXsk7JlIGRl5RQtzIAAMxM0JhYEAihvJKDBhISuQtJIq8856QQpK0ss/t79x77tld93QH9uTU/6zf77sfa+2167TRqGsjrhxwe0zEEPTAI1zHm3+ZdHPgvtiMxejWBOQqduJ4SyZQCbwIB9Alw/Qs5uNLRmxDSFPg5QkaQb9wGKdxB+8wBpOxCv2T001Mw7dceDl4FG6jHT5gDm5UMOuMg1iY/t+L1S0Fn8HsJJ6KS1WMIvEiZgJ+YjCe5sCLK+6F90m0HytzDDA67VKERzJuzdEVwQvSeYZuEq7kGKSY+xiOC5iZoyuC16fyCF1XfM0xSDFRAZGUb9EnR1cEb8S2JOqEHzkGKSZ0of+M7jm6IngpDiXRIDzOMUgxRzAvHU8cU9VRBI/E3aRYgz1V1X8COqSkjOt0H+pzdOV1/Ar9EL+x6u8ZJhuwI8VlJ2U5eC12J5PY9mVVwGNxGZETx9J2Z8xVo+7UMV0I45P6FNbhWZlbgFZge6qAuDwG4nkWVWNw6HriPEYUTKJO76WzHIeYWFyZMeJ+jnM+gS14mAOv1J2iK+1Kq4prsdKICS1BnHO0zxjRVDbhRXMTqPYQiO4ThrNSskVfjofAORzFrWQ+FA8KoHgkRLd6UgleDZyza6WYk5hbEMQEp6dW2sinNcFRftGpIkdKI8pyCl6Wk1sTHN5xNNEoBhRAsd0z0t3Q8Lm1wSX4NfQuwF+n9vmx9K0W4PCOmo6LpbTt0aOjV9d0xSXzYbiYHgbxGv1r1GrFJUi0yE9NlUatwRXL8f8D/wbso2YfcIMr0AAAAABJRU5ErkJggg==");
+	background-repeat: no-repeat;
+	background-size: 2.3rem;
+    background-position: 20px;
+}
+
+
+.contenido .contenido_formulario .formulario input[type="submit"].save{
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUFJREFUSEvtlj1OQkEQgD9uQEKvHIAEToBaG6DEY2hP5wHkGHgCNRSAjS0kHAAPYEFpLDRj3ks2w76dfYvxUbwt5++bmTe7bxpUdBoVcTk5cAvoQFJib8Cn1UlfxffAxHIM6F+AAfAViqHBZ8D7EdDc9RkYhuAa3AdWCrwBbpWsBzxksjtgDbgyUQXhGnwJLBREEhG5e1y7K2CZ2WjfOXDtqzwVLNVNs0ykG1KxL2kxeQJGGp4K9o1BEVhsDyr/L7DA80/ym3QMeJ+10hr2JtANGJUGW8BYfQ0uvJ+xLYy1K91q38tlweSO60ErDfa9XBZYXrILZVSDzeGqW20NluhLD1fsImDBfddJpvw1d9Q/iXNgZ0VN1Lfdtcq37M2AcWLwIrdH4MZVFu3Vx6y3bvxvYAt86IxObqH/404fhqus4h/2t1kfktr+5gAAAABJRU5ErkJggg==");
+}
+
+.contenido .contenido_formulario .formulario input[type="submit"]:hover{
+	cursor:pointer;
+	background-color: rgba(0 0 0 / .2);
+}
